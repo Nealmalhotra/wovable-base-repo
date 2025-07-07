@@ -10,6 +10,6 @@
     "*": "./src/blocks",
     "Animations": "./src/Animations",
     "Backgrounds": "./src/Backgrounds",
-    "Components": "./src/Components"
+    "Components": "./src/components"
   }
 }
