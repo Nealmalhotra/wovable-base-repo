@@ -10,11 +10,12 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-module.exports = {
-  extends: ["plugin:@next/next/recommended"],
-  rules: {
-    "@next/next/no-img-element": "off",
+export default defineConfig([
+  {
+    extends: ["plugin:@next/next/recommended"],
+    rules: {
+      "@next/next/no-img-element": "off",
+    },
   },
-};
-
-export default defineConfig([globalIgnores([".src/Backgrounds/*, .src/Animations/*"])]);
+  globalIgnores([".src/Backgrounds/*, .src/Animations/*"]),
+]);
